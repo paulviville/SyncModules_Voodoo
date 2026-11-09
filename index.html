@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Monitor</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#2563eb">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+</head>
+<body>
+<div id="app">
+  <div id="viewport">
+	<div id="toolbar">
+      <button id="btn-sidebar" title="Hide/show sidebar (H)" aria-label="Toggle sidebar">☰</button>
+      <button id="btn-fullscreen" title="Fullscreen (F)" aria-label="Toggle fullscreen">⛶</button>
+    </div>
+  </div>
+  <aside id="sidebar"></aside>
+</div>
+<script type="importmap">
+	{
+		"imports": {
+			"three": "./three/three.module.js",
+			"controls/": "./three/controls/",
+			"loaders/": "./three/loaders/"
+		}
+	}
+</script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/controls/OrbitControls.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/lil-gui@0.19.2/dist/lil-gui.umd.min.js"></script>
+<script src="index.js" type="module"></script>
+</body>
+</html>
